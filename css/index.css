@@ -234,7 +234,7 @@ img{
    	  width: 1.52rem;
    	  height: 0.5rem;
    	  right: 0;
-   	  bottom: 3%;
+   	  bottom: 2%;
    }
    .se2_con{
    	 width:88%;
@@ -556,5 +556,5 @@ img{
 }
 @-webkit-keyframes fullbehave2{
 	0%{width:0%;height:0%;opacity:0}
-	100%{width:94%;height: 92%;opacity: 1;}
+	100%{width:94%;height: 94%;opacity: 1;}
 }
