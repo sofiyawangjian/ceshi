@@ -88,6 +88,11 @@
 							<p class='ani' swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="4s">关于我们</p>
 							<p class='ani' swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="4.3s">ABOUT US</p>	
 						</div>
+
+
+						<div class="se2_ti ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3.7s">
+							<p class='ani' swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">湖南奥盟电器有限公司</p>
+				     	</div>
 					</div>
 					<img src="img/xie.png" alt="" class='xieleft' />
 					<img src="img/xie.png" alt="" class='xieright' />
@@ -98,9 +103,7 @@
 						
 					</div>
 					<img src="img/pc2_ti2.png" class='se2_ti2 ani' swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s" alt="" />
-					<div class="se2_ti ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3.7s">
-						<p class='ani' swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">湖南奥盟电器有限公司</p>
-					</div>
+					
 					<!-- <div class="sixbox">
                        <div class="tenleft ani" swiper-animate-effect="fadeIn" swiper-animate-duration="3s" swiper-animate-delay="3.5s">
 							<div class="l_box ani " swiper-animate-effect="slideOutLeft" swiper-animate-duration="0.5s" swiper-animate-delay="4.3s"></div>
@@ -141,6 +144,10 @@
 							<p class='ani' swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="4.3s">我们的产品</p>
 							<p class='ani' swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">PRODUCTS</p>	
 						</div>
+
+						<div class="se2_ti ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">
+						<p class='ani' swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3.5s">湖南奥盟电器有限公司</p>
+					</div>
 					</div>
 					<img src="img/xie.png" alt="" class='xieleft' />
 					<img src="img/xie.png" alt="" class='xieright' />
@@ -150,9 +157,7 @@
 					<div class="bor_cen">
 						
 					</div>
-					<div class="se2_ti ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">
-						<p class='ani' swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3.5s">湖南奥盟电器有限公司</p>
-					</div>
+					
 					
 					<div class="sixbox">
                        <div class="tenleft ani" swiper-animate-effect="fadeIn" swiper-animate-duration="3s" swiper-animate-delay="3.5s">
@@ -288,23 +293,31 @@
 	    </div>
 	</body>
 	<script>
-
+       
        window.onload = function(){
-        res()
+        
+		var show_h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		    var show_w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        	console.log(show_w/show_h)
+		    
+		    if(show_w/show_h>0.61){
+		    	$('.se3_con').css('marginTop','0.4rem')
+		    }
+
         $(document).on('contextmenu',function(e){
         	e.preventDefault()
         })
         $(window).resize(function(){
-        	res()
+        	var show_h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		    var show_w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        	console.log(show_w/show_h)
+
+		    if(show_w/show_h>0.61){
+		    	$('.se3_con').css('marginTop','0.4rem')
+		    }
           })
-        function res(){
-        	var clientWidth = document.documentElement.clientWidth;
-            var clientHeight = document.documentElement.clientHeight;
-        	if( clientWidth /clientHeight > (400/667) ){
-                	$('.resize').width(375/667 * clientHeight);
-                	
-             }
-        }
+
+        
 		var mySwiper = new Swiper('.swiper-container', {
 			direction: 'vertical',
 			onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
