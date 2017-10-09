@@ -47,11 +47,18 @@ img{
 .xieright{
 	top:0;
 	-webkit-transform: rotate(180deg) translateX(100%);
+   -moz-transform: rotate(180deg) translateX(100%);
+   -ms-transform: rotate(180deg) translateX(100%);
+   -o-transform: rotate(180deg) translateX(100%);
 	transform: rotate(180deg) translateX(100%);
+
 }
 .xieleft{
 	bottom: 0;
 	-webkit-transform: translateX(100%);
+   -moz-transform: translateX(100%);
+   -ms-transform: translateX(100%);
+   -o-transform: translateX(100%);
 	transform: translateX(100%);
 }
 .tenbox{
@@ -88,6 +95,9 @@ img{
  	top: 50%;
  	left: 50%;
     -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     background: #1453A2;
     opacity: 0;
@@ -126,6 +136,10 @@ img{
  	position: absolute;
  	left: 50%;
  	line-height: 2rem;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
  	transform: translateX(-50%);
  	text-align: center;	
  }
@@ -195,6 +209,10 @@ img{
    	  height: 0;
    	  left: 50%;
    	  top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
    	  transform: translate(-50%,-50%);
    	  background: url(../img/border.png);
    	  background-size: 100% 100%;
@@ -272,7 +290,11 @@ img{
    	  position: absolute;
    	  left: 50%;
    	  top: 50%;
-   	  transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
    	  background: url(../img/border.png);
    	  background-size: 100% 100%;
    }
@@ -384,10 +406,16 @@ img{
 /*active*/
 .swiper-slide-active .xieleft{
 	-webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
 	transform: translateX(-100%);
 }
 .swiper-slide-active .xieright{
 	-webkit-transform:rotate(180deg) translateX(-100%);
+   -moz-transform:rotate(180deg) translateX(-100%);
+   -ms-transform:rotate(180deg) translateX(-100%);
+   -o-transform:rotate(180deg) translateX(-100%);
 	transform:rotate(180deg) translateX(-100%);
 }
 .swiper-slide-active .tenbox .l_box{
@@ -398,34 +426,88 @@ img{
  }
  .swiper-slide-active .fullbox:nth-child(4){
  	-webkit-animation:fullbehave 1s 1.6s;
+   -moz-animation:fullbehave 1s 1.6s;
+   -ms-animation:fullbehave 1s 1.6s;
+   -o-animation:fullbehave 1s 1.6s;
+   animation:fullbehave 1s 1.6s;
+
  }
  .swiper-slide-active .fullbox:nth-child(5){
  	-webkit-animation:fullbehave 1s 2s;
+   -moz-animation:fullbehave 1s 2s;
+   -ms-animation:fullbehave 1s 2s;
+   -o-animation:fullbehave 1s 2s;
+   animation:fullbehave 1s 2s;
+
  }
  .swiper-slide-active .s1_title{
  	-webkit-animation: s1title 2s steps(10) 2.2s;
+   -moz-animation: s1title 2s steps(10) 2.2s;
+   -ms-animation: s1title 2s steps(10) 2.2s;
+   -o-animation: s1title 2s steps(10) 2.2s;
+   animation: s1title 2s steps(10) 2.2s;
+
  	-webkit-animation-fill-mode: both;
+   -moz-animation-fill-mode: both;
+   -ms-animation-fill-mode: both;
+   -o-animation-fill-mode: both;
+   animation-fill-mode: both;
+
  }
  
  /*section2*/
  .swiper-slide-active .fullbox:nth-child(1){
  	-webkit-animation:fullbehave 1s 0s;
+   -moz-animation:fullbehave 1s 0s;
+   -ms-animation:fullbehave 1s 0s;
+   -o-animation:fullbehave 1s 0s;
+   animation:fullbehave 1s 0s;
+
  }
  .swiper-slide-active .fullbox:nth-child(2){
  	-webkit-animation:fullbehave 2s 0.3s;
+   -moz-animation:fullbehave 2s 0.3s;
+   -ms-animation:fullbehave 2s 0.3s;
+   -o-animation:fullbehave 2s 0.3s;
+   animation:fullbehave 2s 0.3s;
+
  }
  .swiper-slide-active .fullbox:nth-child(3){
  	-webkit-animation:fullbehave 2s 2.5s;
+   -moz-animation:fullbehave 2s 2.5s;
+   -ms-animation:fullbehave 2s 2.5s;
+   -o-animation:fullbehave 2s 2.5s;
+   animation:fullbehave 2s 2.5s;
+
  }
  .swiper-slide-active .bor_left{
 	-webkit-animation: borR 1.5s 1.5s;
+   -moz-animation: borR 1.5s 1.5s;
+   -ms-animation: borR 1.5s 1.5s;
+   -o-animation: borR 1.5s 1.5s;
+   animation: borR 1.5s 1.5s;
+
 }
  .swiper-slide-active .bor_right{
 	-webkit-animation: borL 1.5s 1.5s;
+   -moz-animation: borL 1.5s 1.5s;
+   -ms-animation: borL 1.5s 1.5s;
+   -o-animation: borL 1.5s 1.5s;
+   animation: borL 1.5s 1.5s;
+
 }
  .swiper-slide-active .bor_cen{
  	-webkit-animation: fullbehave2 2s 2s;
+   -moz-animation: fullbehave2 2s 2s;
+   -ms-animation: fullbehave2 2s 2s;
+   -o-animation: fullbehave2 2s 2s;
+   animation: fullbehave2 2s 2s;
+
  	-webkit-animation-fill-mode: both;
+   -moz-animation-fill-mode: both;
+   -ms-animation-fill-mode: both;
+   -o-animation-fill-mode: both;
+   animation-fill-mode: both;
  	
  }
 
